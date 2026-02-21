@@ -1,0 +1,179 @@
+/* ============================================
+   GLOBAL COLORS
+   ============================================ */
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1e293b;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+.navbar {
+  padding: 1rem 0;
+  z-index: 100;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb) !important;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #e2e8f0 !important;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  opacity: 0.9;
+}
+
+/* Dropdown */
+#userDropdown .dropdown-menu {
+  background-color: #1e293b;
+  border: none;
+}
+
+#userDropdown .dropdown-item {
+  color: #e2e8f0;
+}
+
+#userDropdown .dropdown-item:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+#userDropdown .dropdown-divider {
+  border-color: #475569;
+}
+
+/* ============================================
+   CONTAINERS
+   ============================================ */
+.container {
+  max-width: 900px;
+}
+
+.alert {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #334155;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn-primary {
+  background-color: #2563eb;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-success {
+  background-color: #10b981;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}
+
+.btn-dark {
+  background-color: #1e293b;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #0f172a;
+}
+
+/* ============================================
+   PROFILE BOX
+   ============================================ */
+.profile-box {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.profile-box .card-body {
+  padding: 1.5rem;
+}
+
+.profile-item .profile-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+.table {
+  background-color: #ffffff;
+}
+
+.table thead {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* ============================================
+   Page Visibility & Role-Based Display
+   ============================================ */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+body.not-authenticated .role-logged-in {
+  display: none !important;
+}
+
+body.authenticated .role-logged-out {
+  display: none !important;
+}
+
+.role-admin {
+  display: none;
+}
+
+body.is-admin .role-admin {
+  display: block;
+}
+
+.page-section {
+  min-height: calc(100vh - 120px);
+}
